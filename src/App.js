@@ -30,16 +30,7 @@ function App() {
     setTodos(newTodos)
   }
   
-  return (
-  
-  <div className="App">
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <input type="text" ref={todoNameRef}/>
-      <button onClick={handleAddTodo}>add task</button>
-      <button onClick={handleClear}>delete task</button>
-      <div>leaved tasks:{todos.filter((todo) => !todo.completed).length}</div>
-    </div>
-  );
+
 }
 
 export default App;
